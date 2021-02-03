@@ -68,7 +68,7 @@ input[type="checkbox"]:checked ~ span.icon::before {
 }
 /* navbar  */
 ul{
-  background-color: cornflowerblue;
+  background-color: #173e46;
   width:300px;
   height: 100vh;
   display: flex;
@@ -102,17 +102,15 @@ input[type="checkbox"]:checked ~ ul {
 
 section {
   height: 100vh;
-  text-align: center;
+
   color: #fff;
-  line-height: 100vh;
-  font-size: 36px;
   text-transform: uppercase;
 }
 section#developer {
   background-color:  crimson;
 }
 section#home {
-  background-color:  darkblue;
+  background-color: #3fb0ac;
 }
 section#graph {
   background-color:  darkslategrey;
@@ -120,4 +118,21 @@ section#graph {
 
 section#contact {
   background-color:  crimson;
+}
+
+/* nav hover transition */
+.headerTextContainer {
+  position: relative;
+  font-style: italic;
+  top: 30%;
+  color: white;
+}
+
+.headerText {
+  position:inherit;
+  left: 53%;
+  transform: translate(-45%, -10%);
+  font-size: 30px;
+  font-weight: bold;
+	width: 1225px;
 }
