@@ -32,7 +32,7 @@ a{
   text-decoration: none;
 }
 
-input[type="checkbox"]{
+/*input[type="checkbox"]{
   width: 80px;
   height: 80px;
   position: fixed;
@@ -58,6 +58,7 @@ span.icon::before {
   display: block;
   content: "menu";
   color: #fff;
+  font-weight: bold;
   text-align: center;
   line-height: 80px;
   text-transform: uppercase;
@@ -66,8 +67,9 @@ span.icon::before {
 input[type="checkbox"]:checked ~ span.icon::before {
   content: "close";
 }
-/* navbar  */
+ navbar  */
 ul{
+  position: relative;
   background-color: #173e46;
   width:300px;
   height: 100vh;
@@ -76,7 +78,7 @@ ul{
   justify-content: center;
   padding-left: 50px;
   position: fixed;
-  left: -300px;
+  /*left: -300px; */
   top: 0;
   transition: 300ms all;
 }
@@ -89,20 +91,21 @@ ul li a {
   display: block;
   margin-bottom: 40px;
   color: #fff;
+  font-weight: bold;
   transition: 300ms all;
 }
 /* nav hover transition */
 ul li a:hover{
   transform: translateX(10px);
 }
-
+/*
 input[type="checkbox"]:checked ~ ul {
   left: 0;
-}
+}*/
 
 section {
+  position: inherit;
   height: 100vh;
-
   color: #fff;
   text-transform: uppercase;
 }
@@ -121,15 +124,22 @@ section#contact {
 }
 
 /* nav hover transition */
-.headerTextContainer {
-  position: relative;
-  font-style: italic;
-  top: 30%;
-  color: white;
-}
 
 .headerText {
-  position:inherit;
+  font-style: italic;
+  color: white;
+  position:relative;
+
+
+  font-size: 65px;
+  font-weight: bold;
+  top: 30%;
+  width: 1225px;
+  text-align: center;
+}
+
+.headeText {
+  position:relative;
   left: 53%;
   transform: translate(-45%, -10%);
   font-size: 30px;
