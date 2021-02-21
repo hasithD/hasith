@@ -6,10 +6,12 @@
   --header-height: 3rem;
   --nav-width: 68px;
 
-  /*===== Colors =====*/
-  --first-color: #4723D9;
-  --first-color-light: #AFA5D9;
-  --white-color: #F7F6FB;
+  /*===== Side bar Colors =====*/
+  --first-color: #2C3531;
+  /*=====Icon  Colors =====*/
+  --first-color-light: #E85A4F;
+  /*===== Header  Colors =====*/
+  --white-color: #EAE7DC;
 
   /*===== Font and typography =====*/
   --body-font: 'Nunito', sans-serif;
@@ -59,19 +61,6 @@ a{
   cursor: pointer;
 }
 
-.header__img{
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.header__img img{
-  width: 40px;
-}
-
 /*===== NAV =====*/
 .l-navbar{
   position: fixed;
@@ -82,6 +71,8 @@ a{
   background-color: var(--first-color);
   padding: .5rem 1rem 0 0;
   transition: .5s;
+  font-weight:bold;
+  font-size: 18px;
   z-index: var(--z-fixed);
 }
 
@@ -118,7 +109,7 @@ a{
 .nav__link{
   position: relative;
   color: var(--first-color-light);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   transition: .3s;
 }
 
@@ -128,6 +119,13 @@ a{
 
 .nav__icon{
   font-size: 1.25rem;
+}
+/*Menu icon*/
+.bx-menu{
+  color: #464E4B;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 7px;
 }
 
 /*Show navbar movil*/
@@ -157,36 +155,150 @@ a{
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
   body{
-    margin: calc(var(--header-height) + 1rem) 0 0 0;
-    padding-left: calc(var(--nav-width) + 2rem);
+    margin: calc(var(--header-height) + 0rem) 0 0 0;
+    padding-left: calc(var(--nav-width) + 0rem);
   }
 
   .header{
     height: calc(var(--header-height) + 1rem);
-    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
-  }
-
-  .header__img{
-    width: 40px;
-    height: 40px;
-  }
-
-  .header__img img{
-    width: 45px;
+    padding: 0 0rem 0 calc(var(--nav-width) + 0rem);
   }
 
   .l-navbar{
     left: 0;
-    padding: 1rem 1rem 0 0;
+    padding: 20rem 1rem 0 0;
   }
 
   /*Show navbar desktop*/
   .show{
-    width: calc(var(--nav-width) + 156px);
+    width: calc(var(--nav-width) + 175px);
   }
 
   /*Add padding body desktop*/
   .body-pd{
-    padding-left: calc(var(--nav-width) + 188px);
+    padding-left: calc(var(--nav-width) + 175px);
   }
+}
+
+
+
+section {
+  position: inherit;
+
+  text-transform: uppercase;
+}
+section#resume {
+  background-color: #464E4B;
+    height: 100vh;
+}
+section#about {
+  background-color: #EAE7DC;
+    height: 90vh;
+}
+section#skills {
+  background-color: #8E8D8A;
+    height: 55vh;
+}
+
+section#contact {
+  background-color: #D8C3A5;
+    height: 40vh;
+}
+html{
+  scroll-behavior:smooth;
+}
+
+/* headings */
+.aboutText {
+  font-style: italic;
+  color: #464E4B;
+  font-family: monospace;
+  position:relative;
+  font-size: 70px;
+  font-weight: bold;
+  left: 15%;
+  top: 30%;
+  width: 1225px;
+  text-align: center;
+}
+.headings{
+  color: white;
+  font-family: monospace;
+  font-size: 70px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+/* education section contents */
+.educationTable{
+  padding-left: 90px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.bx-book-content{
+  font-size: 50px;
+  font-family: monospace;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 40px;
+  grid-template-columns: max-content max-content;
+}
+.degreeName{
+  font-size: 23px;
+}
+.degreeYear{
+  font-size: 15px;
+}
+/* work expirience section contents */
+.bx-briefcase-alt-2{
+  font-size: 50px;
+  font-family: monospace;
+  font-weight: bold;
+  margin-top: 90px;
+  margin-left: 40px;
+  grid-template-columns: max-content max-content;
+}
+
+.job{
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+.jobName{
+  font-size: 30px;
+}
+
+.jDesciption li{
+ font-size:20px;
+}
+
+/* Skills */
+
+.skillsList li{
+ font-size:20px;
+ margin-left: 30px;
+}
+.column{
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.skillCategoryName{
+ font-size: 30px;
+ font-weight: bold;
+}
+
+.getInTouch{
+ font-size: 30px;
+ font-weight: bold;
+ margin-left: 180px;
+ margin-top: 50px;
+}
+.contact-me{
+  font-size: 40px;
+  font-family: monospace;
+  font-weight: bold;
+  margin-left: 195px;
+  padding: -50;
+  margin-top: 10px;
+
 }
