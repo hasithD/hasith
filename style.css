@@ -189,7 +189,8 @@ section {
 }
 section#resume {
   background-color: #464E4B;
-    height: 100vh;
+    height: 105vh;
+    color: #ffff;
 }
 section#about {
   background-color: #EAE7DC;
