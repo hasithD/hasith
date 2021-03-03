@@ -183,14 +183,12 @@ a{
 
 
 section {
-  position: inherit;
 
-  text-transform: uppercase;
 }
 section#resume {
   background-color: #464E4B;
-    height: 105vh;
-    color: #ffff;
+    height: 115vh;
+    color: #EAE7DC;
 }
 section#about {
   background-color: #EAE7DC;
@@ -227,49 +225,95 @@ html{
   font-family: monospace;
   font-size: 70px;
   font-weight: bold;
-  margin-left: 30px;
+  margin-left: 40px;
 }
+
+.cvDownload{
+  font-size: 23px;
+  font-weight: normal;
+
+  padding-left: 100px;
+  margin-top: 10px;
+}
+
+.button {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  background-color: #464E4B;
+  color: #EAE7DC;
+  font-weight: bolder;
+  font-style: italic;
+  border: 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+
+  color: #EAE7DC;
+  font-weight: lighter;
+  border: 3px solid #EAE7DC;
+}
+
 /* education section contents */
 .educationTable{
-  padding-left: 90px;
+  padding-left: 130px;
   margin-top: 20px;
   margin-right: 20px;
+  margin-bottom: 50px;
 }
-.bx-book-content{
-  font-size: 50px;
+.resumeTitles{
+  font-size: 45px;
   font-family: monospace;
   font-weight: bold;
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 100px;
+  color: #ffff;
   grid-template-columns: max-content max-content;
 }
+
 .degreeName{
-  font-size: 23px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.uniName{
+  font-size: 26px;
+  font-weight: bold;
 }
 .degreeYear{
-  font-size: 15px;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 6px;
+  font-style: italic;
 }
 /* work expirience section contents */
-.bx-briefcase-alt-2{
-  font-size: 50px;
-  font-family: monospace;
-  font-weight: bold;
-  margin-top: 90px;
-  margin-left: 40px;
-  grid-template-columns: max-content max-content;
-}
 
 .job{
   margin-top: 20px;
-  margin-left: 70px;
+  margin-left: 130px;
+  margin-bottom: 30px;
 }
 
 .jobName{
-  font-size: 30px;
+  font-size: 26px;
+  font-weight: bold;
 }
 
+.tPeriod{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-style: italic;
+}
 .jDesciption li{
  font-size:20px;
+ font-weight: lighter;
+ color: #fff;
 }
 
 /* Skills */
@@ -277,6 +321,7 @@ html{
 .skillsList li{
  font-size:20px;
  margin-left: 30px;
+ color: white;
 }
 .column{
   margin-top: 30px;
@@ -286,6 +331,8 @@ html{
 .skillCategoryName{
  font-size: 30px;
  font-weight: bold;
+ margin-bottom: 10px;
+ color: #464E4B;
 }
 
 .getInTouch{
@@ -295,11 +342,56 @@ html{
  margin-top: 50px;
 }
 .contact-me{
-  font-size: 40px;
-  font-family: monospace;
   font-weight: bold;
-  margin-left: 195px;
-  padding: -50;
-  margin-top: 10px;
+  margin-left: 180px;
+  margin-top: 5px;
+}
 
+.fa {
+  padding: 17px;
+  font-size: 30px;
+  width: 65px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    background: #fff;
+    color: #E85A4F;
+    transform: translateY(-10px);
+    transition: 300ms all;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #fb3958;
+  color: white;
+}
+
+.fa-envelope {
+  background: #EEEEEE;
+  color: #D44638;
+}
+
+.fa-envelope:hover {
+    opacity: 1;
+    background: #D44638;
+    color: #EEEEEE;
+    transform: translateY(-10px);
+    transition: 300ms all;
 }
