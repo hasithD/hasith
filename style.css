@@ -7,11 +7,11 @@
   --nav-width: 68px;
 
   /*===== Side bar Colors =====*/
-  --first-color: #2C3531;
+  --first-color: #050d18;
   /*=====Icon  Colors =====*/
-  --first-color-light: #E85A4F;
+  --first-color-light: #00F3EF;
   /*===== Header  Colors =====*/
-  --white-color: #EAE7DC;
+  --white-color: #181005;
 
   /*===== Font and typography =====*/
   --body-font: 'Nunito', sans-serif;
@@ -29,7 +29,7 @@
 body{
   position: relative;
   margin: var(--header-height) 0 0 0;
-  padding: 0 1rem;
+
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   transition: .5s;
@@ -122,7 +122,7 @@ a{
 }
 /*Menu icon*/
 .bx-menu{
-  color: #464E4B;
+  color: #00F3EF;
   font-size: 30px;
   margin-left: 10px;
   margin-top: 7px;
@@ -186,52 +186,82 @@ section {
 
 }
 section#resume {
-  background-color: #464E4B;
+  background-color: #FFFEFB;
     height: 115vh;
-    color: #EAE7DC;
+    color: #050d18;
 }
 section#about {
-  background-color: #EAE7DC;
+  background-color: #181005;
     height: 90vh;
+
 }
 section#skills {
-  background-color: #8E8D8A;
+  background-color: #f5f8fd;
     height: 55vh;
 }
 
 section#contact {
-  background-color: #D8C3A5;
-    height: 40vh;
+  background-color: #FFFEFB;
+    height: 35vh;
 }
 html{
   scroll-behavior:smooth;
 }
 
 /* headings */
-.aboutText {
-  font-style: italic;
-  color: #464E4B;
-  font-family: monospace;
-  position:relative;
-  font-size: 70px;
-  font-weight: bold;
-  left: 15%;
-  top: 30%;
-  width: 1225px;
-  text-align: center;
+.line-1{
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-style: italic;
+    color: #00F3EF;
+    font-family: monospace;
+    position:relative;
+    font-size: 70px;
+    font-weight: bold;
+    top: 30%;
+    text-align: center;
 }
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
 .headings{
-  color: white;
-  font-family: monospace;
-  font-size: 70px;
-  font-weight: bold;
   margin-left: 40px;
+  margin-top: 10px;
+}
+.headings h2{
+  color: #205296;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+.headings h2::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
 }
 
 .cvDownload{
   font-size: 23px;
   font-weight: normal;
-
   padding-left: 100px;
   margin-top: 10px;
 }
@@ -243,8 +273,8 @@ html{
   text-decoration: none;
   display: inline-block;
   font-size: 23px;
-  background-color: #464E4B;
-  color: #EAE7DC;
+  background-color: #FFFEFB;
+  color: #050d18;
   font-weight: bolder;
   font-style: italic;
   border: 2px;
@@ -254,9 +284,9 @@ html{
 
 .button:hover {
 
-  color: #EAE7DC;
-  font-weight: lighter;
-  border: 3px solid #EAE7DC;
+  color: #050d18;
+  font-weight: normal;
+  border: 3px solid #149ddd;
 }
 
 /* education section contents */
@@ -267,18 +297,18 @@ html{
   margin-bottom: 50px;
 }
 .resumeTitles{
-  font-size: 45px;
+  font-size: 40px;
   font-family: monospace;
   font-weight: bold;
   margin-top: 20px;
   margin-left: 100px;
-  color: #ffff;
+  color: #205296;
   grid-template-columns: max-content max-content;
 }
 
 .degreeName{
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 .uniName{
@@ -312,8 +342,8 @@ html{
 }
 .jDesciption li{
  font-size:20px;
- font-weight: lighter;
- color: #fff;
+ font-weight: normal;
+ color: #050d18;
 }
 
 /* Skills */
@@ -321,7 +351,7 @@ html{
 .skillsList li{
  font-size:20px;
  margin-left: 30px;
- color: white;
+ color: #050d18;
 }
 .column{
   margin-top: 30px;
@@ -339,7 +369,7 @@ html{
  font-size: 30px;
  font-weight: bold;
  margin-left: 180px;
- margin-top: 50px;
+ margin-top: 30px;
 }
 .contact-me{
   font-weight: bold;
