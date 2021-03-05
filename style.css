@@ -41,7 +41,7 @@ a{
 
 /*===== HEADER =====*/
 .header{
-  width: 100%;
+  
   height: var(--header-height);
   position: fixed;
   top: 0;
@@ -114,7 +114,7 @@ a{
 }
 
 .nav__link:hover{
-  color: var(--white-color);
+  color: #ffffff;
 }
 
 .nav__icon{
@@ -140,7 +140,7 @@ a{
 
 /*Active links*/
 .active{
-  color: var(--white-color);
+  color: #ffffff;
 }
 
 .active::before{
@@ -241,7 +241,7 @@ html{
 
 .headings{
   margin-left: 40px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .headings h2{
   color: #205296;
