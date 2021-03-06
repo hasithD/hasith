@@ -9,9 +9,9 @@
   /*===== Side bar Colors =====*/
   --first-color: #050d18;
   /*=====Icon  Colors =====*/
-  --first-color-light: #00F3EF;
+  --first-color-light: #00AAA8;
   /*===== Header  Colors =====*/
-  --white-color: #181005;
+  --white-color: #006769;
 
   /*===== Font and typography =====*/
   --body-font: 'Nunito', sans-serif;
@@ -122,10 +122,11 @@ a{
 }
 /*Menu icon*/
 .bx-menu{
-  color: #00F3EF;
+  color: #ffffff;
   font-size: 30px;
   margin-left: 10px;
   margin-top: 7px;
+  font-weight: bold;
 }
 
 /*Show navbar movil*/
@@ -191,7 +192,7 @@ section#resume {
     color: #050d18;
 }
 section#about {
-  background-color: #181005;
+  background-color: #006769;
     height: 90vh;
 
 }
@@ -215,15 +216,45 @@ html{
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
-    font-style: italic;
-    color: #00F3EF;
-    font-family: monospace;
+    color: #ffffff;
+    font-family: 'Cairo', sans-serif;
     position:relative;
-    font-size: 70px;
-    font-weight: bold;
-    top: 30%;
+    font-size: 115px;
+
+    top: 38%;
     text-align: center;
 }
+
+.line-2{
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-family: 'Cairo', sans-serif;
+    position:relative;
+    font-size: 70px;
+    font-weight: light;
+    top: 36%;
+    text-align: center;
+}
+
+
+.line-1::after {
+  content: '';
+  display: block;
+  width: 63%;
+  height: 5px;
+  margin-top: 10px;
+  background: #ffffff;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 18.5%;
+
+}
+
 /* Animation */
 .anim-typewriter{
   animation: typewriter 4s steps(44) 1s 1 normal both,
