@@ -1,188 +1,154 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Hasith Portfolio</title>
-      <!-- Google Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:100,200,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <title>Hasith Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:100,200,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-      <!-- Vendor CSS Files -->
-      <link href="style.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="style.css" rel="stylesheet">
 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  </head>
+</head>
 
-  <body id="body-pd">
-    <header class="header" id="header">
-        <div class="header__toggle">
-            <i class='bx bx-menu' id="header-toggle"></i>
+<body id="body-pd">
+  <header class="header" id="header">
+      <div class="header__toggle">
+        <i class='bx bx-menu' id="header-toggle"></i>
+      </div>
+  </header>
+      <div class="l-navbar" id="nav-bar">
+          <nav class="nav">
+              <div>
+                  <div class="nav__list">
+                      <a href="#about" class="nav__link">
+                          <i class='bx bxs-user-circle nav__icon' ></i>
+                          <span class="nav__name">About</span>
+                      </a>
+
+                      <a href="#resume" class="nav__link">
+                          <i class='bx bxs-book-content nav__icon' ></i>
+                          <span class="nav__name">Resume</span>
+                      </a>
+
+                      <a href="#skills" class="nav__link">
+                          <i class='bx bxs-pen nav__icon' ></i>
+                          <span class="nav__name">Skills</span>
+                      </a>
+
+                      <a href="#contact" class="nav__link">
+                          <i class='bx bxs-phone nav__icon' ></i>
+                          <span class="nav__name">Contact</span>
+                      </a>
+                  </div>
+              </div>
+          </nav>
+      </div>
+      <section id="about">
+        <div class="line-1 anim-typeriter">Hello ! I'm Hasith Dias </div>
+        <div class="line-2 anim-typeriter">A software developer & a designer. </div>
+      </section>
+      <section id="resume">
+        <div class="headings">
+          <h2>Resume</h2>
         </div>
-          </header>
-        <div class="l-navbar" id="nav-bar">
-            <nav class="nav">
-                <div>
+        <span class="cvDownload">Download a digital copy of my Curriculum Vitae by clicking </span>
+        <button class="button" type="submit" onclick="window.open('hasith_CV.pdf')">Here</button>
 
-                    <div class="nav__list">
-                        <a href="#about" class="nav__link">
-                            <i class='bx bxs-user-circle nav__icon' ></i>
-                            <span class="nav__name">About</span>
-                        </a>
+      <div class="resumeTitles">Education</div>
+        <div class="educationTable">
+          <div class="row">
+            <div class="col-5 ">
+              <span class="uniName">Manukau Institute of Technology</span> <span class="degreeYear">2018-2020</span>
 
-                        <a href="#resume" class="nav__link">
-                            <i class='bx bxs-book-content nav__icon' ></i>
-                            <span class="nav__name">Resume</span>
-                        </a>
-
-                        <a href="#skills" class="nav__link">
-                            <i class='bx bxs-pen nav__icon' ></i>
-                            <span class="nav__name">Skills</span>
-                        </a>
-
-                        <a href="#contact" class="nav__link">
-                            <i class='bx bxs-phone nav__icon' ></i>
-                            <span class="nav__name">Contact</span>
-                        </a>
-                    </div>
-                </div>
-
-            </nav>
+            </div>
+            <div class="col-5 ">
+              <span class="uniName">Google Digital Garage</span><span class="degreeYear">2020-2020</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5 ">
+              <span class="degreeName">Bachelors of Digital Technologies Majoring in Software and Web Development.</span>
+            </div>
+            <div class="col-5 ">
+              <span class="degreeName">Certificate in Fundamentals of Digital Marketing.</span>
+            </div>
+          </div>
         </div>
 
-        <section id="about">
-                    <div class="line-1 anim-typeriter">Hello ! I'm Hasith Dias </div>
-                    <div class="line-2 anim-typeriter">A software developer & a designer. </div>
+        <div class="resumeTitles">Expirience</div>
+        <div class="job">
+          <div class="jobName">Welding Engineers Ltd, Software Developer Internship</div>
+          <div class="tPeriod">July 2020 - December 2020.</div>
+          <ul class ="jDesciption">
+            <li>
+              Developed an Android application and a Web Application with an interactive
+              front end.
+            </li>
+            <li>
+              The Web application was created using HTML/CSS, JavaScript and php
+            </li>
+            <li>
+              No SQL backend database to store and access data using Firebase.
+            </li>
+            <li>
+              Documented all technical specifications and future improvements that should
+              be made for the applications.
+            </li>
+            <li>
+              Demonstrated to the clients how to use applications.
+            </li>
+            <li>
+              Worked in a team of 4 using Agile.
+            </li>
+          </ul>
+        </div>
 
-        </section>
+        <div class="job">
+          <div class="jobName">Trippie Air Limited, Software Developer Intern.</div>
+          <div class="tPeriod">May 2020 - August 2020.</div>
+          <ul class ="jDesciption">
+            <li>
+              Designed and developed a transport logistics Android App using Java.
+            </li>
+            <li>
+              Implemented the database layer
+              using Firebase as the real time backend
+              database to store and access data
+            </li>
+            <li>
+              Documented all technical specifications including wire frames etc. and testing
+              done for the application.
+            </li>
+            <li>
+              Developed the application in a team of 3 using Agile.
+            </li>
+          </ul>
+      </div>
+    </section>
 
-        <section id="resume">
-          <div class="headings">
-            <h2>Resume</h2>
-          </div>
-
-  <span class="cvDownload">Download a digital copy of my Curriculum Vitae by clicking </span>
-
-  <button class="button" type="submit" onclick="window.open('hasith_CV.pdf')">Here</button>
-
-          <div class="resumeTitles">Education</div>
-          <div class="educationTable">
-          <div class="row">
-    <div class="col-5 ">
-      <span class="uniName">Manukau Institute of Technology</span> <span class="degreeYear">2018-2020</span>
-
-    </div>
-    <div class="col-5 ">
-      <span class="uniName">Google Digital Garage</span><span class="degreeYear">2020-2020</span>
-
-    </div>
-  </div>
-  <div class="row">
-<div class="col-5 ">
-      <span class="degreeName">Bachelors of Digital Technologies Majoring in Software and Web Development.</span>
-</div>
-<div class="col-5 ">
-<span class="degreeName">Certificate in Fundamentals of Digital Marketing.</span>
-</div>
-</div>
-</div>
-
-<div class="resumeTitles">Expirience</div>
-<div class="job">
-
-<div class="jobName">Welding Engineers Ltd, Software Developer Internship</div>
-<div class="tPeriod">July 2020 - December 2020.</div>
-<ul class ="jDesciption">
-  <li>Developed an Android application and a Web Application with an interactive
-front end.</li>
-  <li>The Web application was created using HTML/CSS, JavaScript and php</li>
-  <li>No SQL backend database to store and access data using Firebase.</li>
-    <li>Documented all technical specifications and future improvements that should
-be made for the applications..</li>
-      <li>Demonstrated to the clients how to use applications..</li>
-        <li>Worked in a team of 4 using Agile..</li>
-</ul>
-
-</div>
-<div class="job">
-<div class="jobName">Trippie Air Limited, Software Developer Intern.</div>
-<div class="tPeriod">May 2020 - August 2020.</div>
-<ul class ="jDesciption">
-  <li>Designed and developed a transport logistics Android App using Java.</li>
-  <li>Implemented the database layer using Firebase as the real time backend
-database to store and access data</li>
-  <li>Documented all technical specifications including wire frames etc. and testing
-done for the application.</li>
-    <li>DDeveloped the application in a team of 3 using Agile.</li>
-
-</ul>
-
-</div>
-        </section>
-        <section id="skills">
-          <div class="headings">
-            <h2>Skills</h2>
-          </div>
-          <div class="educationTable">
-          <div class="row">
-            <div class="col">
-              <ul class ="skillsList">
-              <div class="skillCategoryName">Frontend</div>
-                <li>Bootstrap</li>
-                <li>jQuery</li>
-                <li>CSS / HTML / JS</li>
-              </ul>
-            </div>
-              <div class="col">
-              <ul class ="skillsList">
-                <div class="skillCategoryName">Backend</div>
-                <li>C# (.NET, ASP.NET)</li>
-                <li>Entity Framework</li>
-                <li>SQL Server</li>
-                <li>MySQL</li>
-                <li>Java</li>
-                <li>Firebase</li>
-              </ul>
-            </div>
-              <div class="col">
-              <ul class ="skillsList">
-              <div class="skillCategoryName">Mobile</div>
-              <li>Android</li>
-              <li>UX/UI</li>
-              <li>xCode</li>
-              <li>Swift</li>
-            </ul>
-            </div>
-              <div class="col">
-              <ul class ="skillsList">
-              <div class="skillCategoryName">Design Patterns</div>
-              <li>OOP</li>
-              <li>MVC</li>
-            </ul>
-            </div>
-              <div class="col">
-              <ul class ="skillsList">
-              <div class="skillCategoryName">MISC</div>
-              <li>Git</li>
-              <li>Database Systems</li>
-              <li>SDLC</li>
-              <li>Figma/Proto.io</li>
-            </ul>
-            </div>
-</div>
-</div>
-        <!--<div class="row">
+      <section id="skills">
+        <div class="headings">
+          <h2>Skills</h2>
+        </div>
+        <div class="educationTable">
+        <div class="row">
           <div class="col">
             <ul class ="skillsList">
-            <div class="skillCategoryName">Frontend</div>
+            <div class="skillCategoryName">
+              Frontend
+            </div>
               <li>Bootstrap</li>
               <li>jQuery</li>
               <li>CSS / HTML / JS</li>
@@ -190,7 +156,9 @@ done for the application.</li>
           </div>
             <div class="col">
             <ul class ="skillsList">
-              <div class="skillCategoryName">Backend</div>
+              <div class="skillCategoryName">
+                Backend
+              </div>
               <li>C# (.NET, ASP.NET)</li>
               <li>Entity Framework</li>
               <li>SQL Server</li>
@@ -201,7 +169,9 @@ done for the application.</li>
           </div>
             <div class="col">
             <ul class ="skillsList">
-            <div class="skillCategoryName">Mobile</div>
+            <div class="skillCategoryName">
+              Mobile
+            </div>
             <li>Android</li>
             <li>UX/UI</li>
             <li>xCode</li>
@@ -210,38 +180,43 @@ done for the application.</li>
           </div>
             <div class="col">
             <ul class ="skillsList">
-            <div class="skillCategoryName">Design Patterns</div>
+            <div class="skillCategoryName">
+              Design Patterns
+            </div>
             <li>OOP</li>
             <li>MVC</li>
           </ul>
           </div>
             <div class="col">
             <ul class ="skillsList">
-            <div class="skillCategoryName">MISC</div>
+            <div class="skillCategoryName">
+              MISC
+            </div>
             <li>Git</li>
             <li>Database Systems</li>
             <li>SDLC</li>
             <li>Figma/Proto.io</li>
           </ul>
           </div>
-        </div>-->
-
-        </section>
-        <section id="contact">
-          <div class="headings">
-            <h2>Contact</h2>
-          </div>
-          <div class="getInTouch">Get in touch with me </div>
-          <div class="contact-me">
-          <a href="https://www.linkedin.com/in/hasith-dias-702793187/" class="fa fa-linkedin"></a>
-          <a href="https://www.facebook.com/hasith.dias/" class="fa fa-facebook"></a>
-          <a href="https://github.com/hasithD" class="fa fa-github"></a>
-          <a href="https://www.instagram.com/hasith___/" class="fa fa-instagram"></a>
-          <a href="mailto:hasithdias@gmail.com" class="fa fa-envelope"></a>
         </div>
+      </div>
+    </section>
 
-        </section>
-
+    <section id="contact">
+      <div class="headings">
+        <h2>Contact</h2>
+      </div>
+      <div class="getInTouch">
+        Get in touch with me
+      </div>
+      <div class="contact-me">
+        <a href="https://www.linkedin.com/in/hasith-dias-702793187/" class="fa fa-linkedin"></a>
+        <a href="https://www.facebook.com/hasith.dias/" class="fa fa-facebook"></a>
+        <a href="https://github.com/hasithD" class="fa fa-github"></a>
+        <a href="https://www.instagram.com/hasith___/" class="fa fa-instagram"></a>
+        <a href="mailto:hasithdias@gmail.com" class="fa fa-envelope"></a>
+      </div>
+    </section>
 
 </body>
   <script src ="main.js"></script>
