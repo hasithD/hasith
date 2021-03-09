@@ -7,9 +7,9 @@
   --nav-width: 68px;
 
   /*===== Side bar Colors =====*/
-  --first-color: #050d18;
+  --first-color: #0f2e30;
   /*=====Icon  Colors =====*/
-  --first-color-light: #00AAA8;
+  --first-color-light: #ffffff;
   /*===== Header  Colors =====*/
   --white-color: #006769;
 
@@ -119,6 +119,7 @@ a{
 
 .nav__icon{
   font-size: 1.25rem;
+
 }
 /*Menu icon*/
 .bx-menu{
@@ -152,17 +153,39 @@ a{
   height: 32px;
   background-color: var(--white-color);
 }
-
+html{
+  scroll-behavior:smooth;
+}
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
   body{
-    margin: calc(var(--header-height) + 0rem) 0 0 0;
+    margin: calc(var(--header-height) + 1rem) 0 0 0;
     padding-left: calc(var(--nav-width) + 0rem);
   }
 
   .header{
     height: calc(var(--header-height) + 1rem);
-    padding: 0 0rem 0 calc(var(--nav-width) + 0rem);
+    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+  }
+
+  section#resume {
+    background-color: #FFFEFB;
+      height: 115vh;
+      color: #050d18;
+  }
+  section#about {
+    background-color: #006769;
+      height: 90vh;
+
+  }
+  section#skills {
+    background-color: #f5f8fd;
+      height: 55vh;
+  }
+
+  section#contact {
+    background-color: #FFFEFB;
+      height: 35vh;
   }
 
   .l-navbar{
@@ -172,45 +195,14 @@ a{
 
   /*Show navbar desktop*/
   .show{
-    width: calc(var(--nav-width) + 175px);
+    width: calc(var(--nav-width) + 160px);
   }
 
   /*Add padding body desktop*/
   .body-pd{
-    padding-left: calc(var(--nav-width) + 175px);
+    padding-left: calc(var(--nav-width) + 160px);
   }
-}
-
-
-
-section {
-
-}
-section#resume {
-  background-color: #FFFEFB;
-    height: 115vh;
-    color: #050d18;
-}
-section#about {
-  background-color: #006769;
-    height: 90vh;
-
-}
-section#skills {
-  background-color: #f5f8fd;
-    height: 55vh;
-}
-
-section#contact {
-  background-color: #FFFEFB;
-    height: 35vh;
-}
-html{
-  scroll-behavior:smooth;
-}
-
-/* headings */
-.line-1{
+}.line-1{
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
     white-space: nowrap;
@@ -220,7 +212,7 @@ html{
     font-family: 'Cairo', sans-serif;
     position:relative;
     font-size: 115px;
-
+    font-weight: bold;
     top: 38%;
     text-align: center;
 }
